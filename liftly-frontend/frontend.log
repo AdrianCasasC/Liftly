@@ -24,3 +24,337 @@ Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
 [2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m [36m3.95 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.603 seconds] - 2026-03-08T18:43:00.178Z
+
+Component update sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.591 seconds] - 2026-03-08T18:53:32.776Z
+
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: NotificationComponent is not used within the template of App[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.ts:7:26:
+[37m      7 │   imports: [RouterOutlet, [32mNotificationComponent[37m],
+        ╵                           [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../core/services/notification.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/components/notification/notification.component.ts:3:36:
+[37m      3 │ ...ificationService } from [32m'../../core/services/notification.service'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/components/notification/notification.component.ts:13:19:
+[37m      13 │   notifications$ = [32mthis.notificationService[37m.notifications$;
+         ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/components/notification/notification.component.ts:16:4:
+[37m      16 │     [32mthis.notificationService[37m.dismiss(id);
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../core/services/notification.service"[0m
+
+    src/app/shared/components/notification/notification.component.ts:3:36:
+[37m      3 │ ...ificationService } from [32m'../../core/services/notification.service'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.232 seconds] - 2026-03-08T18:53:33.612Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../core/services/notification.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/components/notification/notification.component.ts:3:36:
+[37m      3 │ ...ificationService } from [32m'../../core/services/notification.service'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/components/notification/notification.component.ts:13:19:
+[37m      13 │   notifications$ = [32mthis.notificationService[37m.notifications$;
+         ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/components/notification/notification.component.ts:16:4:
+[37m      16 │     [32mthis.notificationService[37m.dismiss(id);
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../core/services/notification.service"[0m
+
+    src/app/shared/components/notification/notification.component.ts:3:36:
+[37m      3 │ ...ificationService } from [32m'../../core/services/notification.service'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m          [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m         [2m | [22m [36m24.88 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m           [2m | [22m [36m18.74 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m  [2m | [22m [1m43.61 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m          [2m | [22m [1mRaw size[22m
+[32mchunk-4JX7LOCT.js[39m  [2m | [22m[2mcalendar[22m       [2m | [22m [36m26.29 kB[39m[2m | [22m
+[32mchunk-TBT3RTE5.js[39m  [2m | [22m[2mcreate-template[22m[2m | [22m [36m21.24 kB[39m[2m | [22m
+[32mchunk-LPMOUT6Y.js[39m  [2m | [22m[2mweight[22m         [2m | [22m [36m14.46 kB[39m[2m | [22m
+[32mchunk-IJLGEDQI.js[39m  [2m | [22m[2mtemplate-list[22m  [2m | [22m [36m12.19 kB[39m[2m | [22m
+[32mchunk-YPXCZ7TA.js[39m  [2m | [22m[2mregister[22m       [2m | [22m [36m12.04 kB[39m[2m | [22m
+[32mchunk-JYNLYBM5.js[39m  [2m | [22m[2mshell[22m          [2m | [22m [36m11.94 kB[39m[2m | [22m
+[32mchunk-GFZ3PQBM.js[39m  [2m | [22m[2mlogin[22m          [2m | [22m  [36m9.68 kB[39m[2m | [22m
+[32mchunk-PNWWGKVC.js[39m  [2m | [22m[2m-[22m              [2m | [22m  [36m1.19 kB[39m[2m | [22m
+[32mchunk-PL7ZQ55M.js[39m  [2m | [22m[2m-[22m              [2m | [22m  [36m1.11 kB[39m[2m | [22m
+[32mchunk-ZDJ3GTZ7.js[39m  [2m | [22m[2m-[22m              [2m | [22m[36m187 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.288 seconds] - 2026-03-08T18:53:48.826Z
+
+Page reload sent to client(s).
+[2m19:53:50[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33mrxjs[32m[39m
+[2m19:53:50[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m          [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m           [2m | [22m[36m16.96 kB[39m[2m | [22m
+[32mchunk-6MZQB4CI.js[39m  [2m | [22m[2m-[22m              [2m | [22m [36m1.78 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m          [2m | [22m[1mRaw size[22m
+[32mchunk-O3VXW455.js[39m  [2m | [22m[2mcreate-template[22m[2m | [22m[36m21.59 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.589 seconds] - 2026-03-08T18:54:11.118Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m[2m | [22m[1mRaw size[22m
+[32mchunk-7HI6BR2R.js[39m  [2m | [22m[2mlogin[22m[2m | [22m [36m9.94 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.295 seconds] - 2026-03-08T18:54:26.174Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m    [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mchunk-NUV3JIME.js[39m  [2m | [22m[2mregister[22m[2m | [22m[36m12.32 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.316 seconds] - 2026-03-08T18:54:31.203Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m    [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mchunk-PA6DDLP4.js[39m  [2m | [22m[2mcalendar[22m[2m | [22m[36m26.58 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.498 seconds] - 2026-03-08T18:54:36.113Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m          [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m           [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m          [2m | [22m[1mRaw size[22m
+[32mchunk-PSGWQ7HU.js[39m  [2m | [22m[2mcalendar[22m       [2m | [22m[36m26.58 kB[39m[2m | [22m
+[32mchunk-ZYKCH5Z5.js[39m  [2m | [22m[2mcreate-template[22m[2m | [22m[36m21.59 kB[39m[2m | [22m
+[32mchunk-5TZ4RUOJ.js[39m  [2m | [22m[2mweight[22m         [2m | [22m[36m14.76 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.442 seconds] - 2026-03-08T18:54:38.079Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m    [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mchunk-PV65FHBG.js[39m  [2m | [22m[2mcalendar[22m[2m | [22m[36m26.69 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.189 seconds] - 2026-03-08T18:54:59.191Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m  [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m [2m | [22m[1mRaw size[22m
+[32mchunk-VXJD7LTJ.js[39m  [2m | [22m[2mweight[22m[2m | [22m[36m14.98 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.223 seconds] - 2026-03-08T18:55:29.329Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m    [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mchunk-OJFYBEG6.js[39m  [2m | [22m[2mcalendar[22m[2m | [22m[36m26.95 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.279 seconds] - 2026-03-08T18:55:31.400Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.546 seconds] - 2026-03-08T19:58:13.748Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: string; description: string; exercises: { exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]; }' is not assignable to parameter of type 'Partial<TrainingTemplate>'.
+  Types of property 'exercises' are incompatible.
+    Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]' is not assignable to type 'TemplateExercise[]'.
+      Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }' is missing the following properties from type 'TemplateExercise': exerciseId, restTime[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:71:42:
+[37m      71 │       this.templateService.createTemplate([32mnewTemplate[37m).subscribe({
+         ╵                                           [32m~~~~~~~~~~~[0m
+
+[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.288 seconds] - 2026-03-08T19:58:15.319Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: string; description: string; exercises: { exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]; }' is not assignable to parameter of type 'Partial<TrainingTemplate>'.
+  Types of property 'exercises' are incompatible.
+    Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]' is not assignable to type 'TemplateExercise[]'.
+      Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }' is missing the following properties from type 'TemplateExercise': exerciseId, restTime[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:71:42:
+[37m      71 │       this.templateService.createTemplate([32mnewTemplate[37m).subscribe({
+         ╵                                           [32m~~~~~~~~~~~[0m
+
+[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.284 seconds] - 2026-03-08T19:58:17.324Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: string; description: string; exercises: { exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]; }' is not assignable to parameter of type 'Partial<TrainingTemplate>'.
+  Types of property 'exercises' are incompatible.
+    Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]' is not assignable to type 'TemplateExercise[]'.
+      Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }' is missing the following properties from type 'TemplateExercise': exerciseId, restTime[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:71:42:
+[37m      71 │       this.templateService.createTemplate([32mnewTemplate[37m).subscribe({
+         ╵                                           [32m~~~~~~~~~~~[0m
+
+[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.151 seconds] - 2026-03-08T19:58:32.019Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: string; description: string; exercises: { exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]; }' is not assignable to parameter of type 'Partial<TrainingTemplate>'.
+  Types of property 'exercises' are incompatible.
+    Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }[]' is not assignable to type 'TemplateExercise[]'.
+      Type '{ exercise: { id: number; }; sets: number; reps: number; restTimeSeconds: number; }' is not assignable to type 'TemplateExercise'.
+        Types of property 'exercise' are incompatible.
+          Type '{ id: number; }' is missing the following properties from type 'Exercise': name, category, targetMuscle[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:71:42:
+[37m      71 │       this.templateService.createTemplate([32mnewTemplate[37m).subscribe({
+         ╵                                           [32m~~~~~~~~~~~[0m
+
+[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.248 seconds] - 2026-03-08T19:58:41.837Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: string; description: string; exercises: { exercise: Exercise | undefined; sets: number; reps: number; restTimeSeconds: number; }[]; }' is not assignable to parameter of type 'Partial<TrainingTemplate>'.
+  Types of property 'exercises' are incompatible.
+    Type '{ exercise: Exercise | undefined; sets: number; reps: number; restTimeSeconds: number; }[]' is not assignable to type 'TemplateExercise[]'.
+      Type '{ exercise: Exercise | undefined; sets: number; reps: number; restTimeSeconds: number; }' is not assignable to type 'TemplateExercise'.
+        Types of property 'exercise' are incompatible.
+          Type 'Exercise | undefined' is not assignable to type 'Exercise'.
+            Type 'undefined' is not assignable to type 'Exercise'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:74:42:
+[37m      74 │       this.templateService.createTemplate([32mnewTemplate[37m).subscribe({
+         ╵                                           [32m~~~~~~~~~~~[0m
+
+[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m          [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m         [2m | [22m [36m24.88 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m           [2m | [22m [36m16.96 kB[39m[2m | [22m
+[32mchunk-6MZQB4CI.js[39m  [2m | [22m[2m-[22m              [2m | [22m  [36m1.78 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m  [2m | [22m [1m43.61 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m          [2m | [22m [1mRaw size[22m
+[32mchunk-LDNPJ5TW.js[39m  [2m | [22m[2mcalendar[22m       [2m | [22m [36m27.18 kB[39m[2m | [22m
+[32mchunk-NP74L4Z6.js[39m  [2m | [22m[2mcreate-template[22m[2m | [22m [36m21.90 kB[39m[2m | [22m
+[32mchunk-BU6ABMJF.js[39m  [2m | [22m[2mweight[22m         [2m | [22m [36m15.17 kB[39m[2m | [22m
+[32mchunk-NUV3JIME.js[39m  [2m | [22m[2mregister[22m       [2m | [22m [36m12.32 kB[39m[2m | [22m
+[32mchunk-IJLGEDQI.js[39m  [2m | [22m[2mtemplate-list[22m  [2m | [22m [36m12.19 kB[39m[2m | [22m
+[32mchunk-JYNLYBM5.js[39m  [2m | [22m[2mshell[22m          [2m | [22m [36m11.94 kB[39m[2m | [22m
+[32mchunk-7HI6BR2R.js[39m  [2m | [22m[2mlogin[22m          [2m | [22m  [36m9.94 kB[39m[2m | [22m
+[32mchunk-PNWWGKVC.js[39m  [2m | [22m[2m-[22m              [2m | [22m  [36m1.19 kB[39m[2m | [22m
+[32mchunk-PL7ZQ55M.js[39m  [2m | [22m[2m-[22m              [2m | [22m  [36m1.11 kB[39m[2m | [22m
+[32mchunk-ZDJ3GTZ7.js[39m  [2m | [22m[2m-[22m              [2m | [22m[36m187 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.220 seconds] - 2026-03-08T19:58:50.184Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m    [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mchunk-M7DH7WYI.js[39m  [2m | [22m[2mcalendar[22m[2m | [22m[36m27.31 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.328 seconds] - 2026-03-08T20:01:01.432Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m  [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m [2m | [22m[1mRaw size[22m
+[32mchunk-RTD326GQ.js[39m  [2m | [22m[2mweight[22m[2m | [22m[36m15.21 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.262 seconds] - 2026-03-08T20:01:03.374Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m  [2m | [22m[36m16.96 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m [2m | [22m[1mRaw size[22m
+[32mchunk-T6UKNI74.js[39m  [2m | [22m[2mweight[22m[2m | [22m[36m15.69 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.191 seconds] - 2026-03-08T20:10:02.386Z
+
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: NgForOf is not used within the template of Weight[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:18:60:
+[37m      18 │ ...ctiveFormsModule, NgxEchartsDirective, NgIf, [32mNgFor[37m, CommonModule],
+         ╵                                                 [32m~~~~~[0m
+
+[39m[22m
+Page reload sent to client(s).

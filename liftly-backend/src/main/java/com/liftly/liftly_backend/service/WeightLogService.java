@@ -33,15 +33,23 @@ public class WeightLogService {
 
     @Transactional
     public WeightLogDto logWeight(String email, WeightLogDto dto) {
-        User user = userRepository.findByEmail(email).orElseThrow();
+        try {
+            User user = userRepository.findByEmail(email).orElseThrow();
 
-        WeightLog weightLog = new WeightLog();
-        weightLog.setUser(user);
-        weightLog.setWeight(dto.weight());
-        weightLog.setLoggedDate(dto.loggedDate());
+            WeightLog weightLog = weightLogRepository.findByUserAndLoggedDate(user, dto.loggedDate())
+                    .orElse(new WeightLog());
+            
+            weightLog.setUser(user);
+            weightLog.setWeight(dto.weight());
+            weightLog.setLoggedDate(dto.loggedDate());
 
-        weightLog = weightLogRepository.save(weightLog);
-        return mapToDto(weightLog);
+            weightLog = weightLogRepository.save(weightLog);
+            return mapToDto(weightLog);
+        } catch (Exception e) {
+            System.err.println("Error in logWeight: " + e.getMessage());
+            e.printStackTrace();
+            throw e;
+        }
     }
 
     private WeightLogDto mapToDto(WeightLog log) {

@@ -3,11 +3,10 @@ import { Exercise } from './exercise.interface';
 export interface TemplateExercise {
   id?: number;
   templateId?: number;
-  exerciseId: number;
-  exercise?: Exercise; // Optional expanded relation
+  exercise: Exercise;
   sets: number;
   reps: number;
-  restTime: number; // in seconds
+  restTimeSeconds: number;
 }
 
 export interface TrainingTemplate {

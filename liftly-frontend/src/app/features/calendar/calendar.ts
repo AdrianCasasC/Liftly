@@ -3,6 +3,7 @@ import { NgClass, NgFor, NgIf, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CalendarMockService } from '../../core/services/mock/calendar-mock.service';
 import { TemplateMockService } from '../../core/services/mock/template-mock.service';
+import { NotificationService } from '../../core/services/notification.service';
 import { CalendarWorkout } from '../../core/models/calendar-workout.interface';
 import { TrainingTemplate } from '../../core/models/training-template.interface';
 
@@ -23,6 +24,7 @@ interface Day {
 export class Calendar implements OnInit {
   private calendarService = inject(CalendarMockService);
   private templateService = inject(TemplateMockService);
+  private notificationService = inject(NotificationService);
 
   currentDate = new Date();
   days: Day[] = [];
@@ -42,9 +44,21 @@ export class Calendar implements OnInit {
 
   loadData() {
     const monthStr = this.currentDate.toISOString().split('T')[0].substring(0, 7);
-    this.calendarService.getWorkouts(monthStr).subscribe((workouts: any) => {
-      this.allWorkouts = workouts;
-      this.generateCalendar();
+    this.calendarService.getWorkouts(monthStr).subscribe({
+      next: (workouts: any) => {
+        this.allWorkouts = workouts.map((w: any) => {
+          if (Array.isArray(w.scheduledDate)) {
+            const [year, month, day] = w.scheduledDate;
+            w.scheduledDate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+          }
+          return w;
+        });
+        this.generateCalendar();
+      },
+      error: () => {
+        this.allWorkouts = [];
+        this.generateCalendar();
+      }
     });
   }
 
@@ -111,12 +125,21 @@ export class Calendar implements OnInit {
           const template = this.templates.find(t => t.id === Number(this.selectedTemplateId));
           res.template = template;
           
+          if (Array.isArray(res.scheduledDate)) {
+            const [year, month, day] = res.scheduledDate;
+            res.scheduledDate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+          }
+          
           this.allWorkouts.push(res);
           this.selectedDay?.workouts.push(res);
           this.isScheduling = false;
           this.selectedTemplateId = null;
+          this.notificationService.showSuccess('Workout scheduled successfully!');
         },
-        error: () => this.isScheduling = false
+        error: () => {
+          this.isScheduling = false;
+          this.notificationService.showError('Failed to schedule workout.');
+        }
       });
     }
   }
