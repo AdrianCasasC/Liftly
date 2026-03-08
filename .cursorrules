@@ -1,0 +1,28 @@
+# Liftly Web Application - AI Assistant Guidelines
+
+## General Context
+- **Project Name:** Liftly
+- **Description:** Gym training application
+- **Stack:** Angular 21 (Frontend), Java 21 & Spring Boot (Backend), SQL Database
+
+## AI Agent Instructions
+1. **Frontend (liftly-frontend):**
+   - Strictly use Angular modern practices (standalone components, signals).
+   - Use TypeScript and follow best modular practices.
+   - For UI/UX, prioritize visually rich, modern, dynamic aesthetics (vibrant colors, subtle animations, clean layout).
+   - Standardize on TailwindCSS for styling as requested, leveraging vanilla extensions if necessary.
+
+2. **Backend (liftly-backend):**
+   - Use Java 21 features (Records, Pattern Matching, structured concurrency if appropriate).
+   - Use Spring Boot 3.x+ (latest compatible with Java 21).
+   - Follow Domain-Driven Design or layered architecture (Controller, Service, Repository).
+   - Always document REST APIs (e.g., using OpenAPI/Swagger).
+
+3. **Database:**
+   - SQL Relational DB. Standardize on MySQL with JPA/Hibernate.
+   - Use Flyway or Liquibase for migrations.
+
+4. **Multi-Agent Collaboration:**
+   - Both Claude and Gemini are interacting with this repo via Antigravity IDE.
+   - Keep `.md` documentation updated in `.agents/` or root folders.
+   - Log significant architectural decisions in `docs/ADR/` or `ARCHITECTURE.md`.

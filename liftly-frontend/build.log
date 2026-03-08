@@ -1,0 +1,494 @@
+[33m❯[39m Building...
+[32m✔[39m Building...
+Application bundle generation failed. [1.977 seconds] - 2026-03-08T17:35:47.720Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2724: '"ngx-echarts"' has no exported member named 'provideEcharts'. Did you mean 'provideEchartsCore'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.config.ts:3:9:
+[37m      3 │ import { [32mprovideEcharts[37m } from 'ngx-echarts';
+        ╵          [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '(req: HttpRequest<unknown>, next: HttpHandlerFn) => void' is not assignable to type 'HttpInterceptorFn'.
+  Type 'void' is not assignable to type 'Observable<HttpEvent<unknown>>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/interceptors/jwt.interceptor.ts:3:13:
+[37m      3 │ export const [32mjwtInterceptor[37m: HttpInterceptorFn = (req, next) => {
+        ╵              [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type '{ Authorization: any; }' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/interceptors/jwt.interceptor.ts:8:18:
+[37m      8 │       setHeaders: [32m{ Authorization: \[37m`Bearer \${token}\` }
+        ╵                   [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/interceptors/jwt.interceptor.ts:8:35:
+[37m      8 │       setHeaders: { Authorization: [32m[37m\`Bearer \${token}\` }
+        ╵                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1136: Property assignment expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/interceptors/jwt.interceptor.ts:8:36:
+[37m      8 │       setHeaders: { Authorization: \[32m`Bearer \${token}\` }[37m
+        ╵                                     [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1160: Unterminated template literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/interceptors/jwt.interceptor.ts:15:0:
+[37m      15 │ [32m[37m
+         ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/auth-mock.service.ts:12:19:
+[37m      12 │   private apiUrl = [32m[37m\`\${environment.apiUrl}/auth\`;
+         ╵                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1068: Unexpected token. A constructor, method, accessor, or property was expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/auth-mock.service.ts:12:20:
+[37m      12 │   private apiUrl = \[32m`\${environment.apiUrl}/auth\`;[37m
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1160: Unterminated template literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/auth-mock.service.ts:22:0:
+[37m      22 │ [32m[37m
+         ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/calendar-mock.service.ts:12:19:
+[37m      12 │   private apiUrl = [32m[37m\`\${environment.apiUrl}/calendar\`;
+         ╵                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1068: Unexpected token. A constructor, method, accessor, or property was expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/calendar-mock.service.ts:12:20:
+[37m      12 │   private apiUrl = \[32m`\${environment.apiUrl}/calendar\`;[37m
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1160: Unterminated template literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/calendar-mock.service.ts:22:0:
+[37m      22 │ [32m[37m
+         ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/exercise-mock.service.ts:12:19:
+[37m      12 │   private apiUrl = [32m[37m\`\${environment.apiUrl}/exercises\`;
+         ╵                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1068: Unexpected token. A constructor, method, accessor, or property was expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/exercise-mock.service.ts:12:20:
+[37m      12 │   private apiUrl = \[32m`\${environment.apiUrl}/exercises\`;[37m
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1160: Unterminated template literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/exercise-mock.service.ts:18:0:
+[37m      18 │ [32m[37m
+         ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/template-mock.service.ts:12:19:
+[37m      12 │   private apiUrl = [32m[37m\`\${environment.apiUrl}/templates\`;
+         ╵                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1068: Unexpected token. A constructor, method, accessor, or property was expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/template-mock.service.ts:12:20:
+[37m      12 │   private apiUrl = \[32m`\${environment.apiUrl}/templates\`;[37m
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1160: Unterminated template literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/template-mock.service.ts:26:0:
+[37m      26 │ [32m[37m
+         ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/weight-mock.service.ts:12:19:
+[37m      12 │   private apiUrl = [32m[37m\`\${environment.apiUrl}/weight\`;
+         ╵                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1068: Unexpected token. A constructor, method, accessor, or property was expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/weight-mock.service.ts:12:20:
+[37m      12 │   private apiUrl = \[32m`\${environment.apiUrl}/weight\`;[37m
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1160: Unterminated template literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/mock/weight-mock.service.ts:22:0:
+[37m      22 │ [32m[37m
+         ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'login' does not exist on type 'AuthMockService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/auth/login/login.ts:30:23:
+[37m      30 │       this.authService.[32mlogin[37m(this.loginForm.value).subscribe({
+         ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'res' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/auth/login/login.ts:31:15:
+[37m      31 │         next: ([32mres[37m) => {
+         ╵                [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'err' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/auth/login/login.ts:36:16:
+[37m      36 │         error: ([32merr[37m) => {
+         ╵                 [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'register' does not exist on type 'AuthMockService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/auth/register/register.ts:36:23:
+[37m      36 │       this.authService.[32mregister[37m(this.registerForm.value).subscribe({
+         ╵                        [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'res' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/auth/register/register.ts:37:15:
+[37m      37 │         next: ([32mres[37m) => {
+         ╵                [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'err' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/auth/register/register.ts:42:16:
+[37m      42 │         error: ([32merr[37m) => {
+         ╵                 [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8004: No pipe found with name 'date'.
+To fix this, import the "DatePipe" class from "@angular/common" and add it to the "imports" array of the component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.html:16:71:
+[37m      16 │ ...-semibold text-gray-900">{{ currentDate | [32mdate[37m:'MMMM yyyy' }}</h2>
+         ╵                                              [32m~~~~[0m
+
+  Error occurs in the template of component Calendar.
+
+    src/app/features/calendar/calendar.ts:21:15:
+[37m      21 │   templateUrl: [32m'./calendar.html'[37m
+         ╵                [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8004: No pipe found with name 'date'.
+To fix this, import the "DatePipe" class from "@angular/common" and add it to the "imports" array of the component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.html:63:30:
+[37m      63 │         {{ selectedDay.date | [32mdate[37m:'EEEE, MMM d' }}
+         ╵                               [32m~~~~[0m
+
+  Error occurs in the template of component Calendar.
+
+    src/app/features/calendar/calendar.ts:21:15:
+[37m      21 │   templateUrl: [32m'./calendar.html'[37m
+         ╵                [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/mock/calendar-mock.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:4:36:
+[37m      4 │ ...Service } from [32m'../../../core/services/mock/calendar-mock.service'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/mock/template-mock.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:5:36:
+[37m      5 │ ...Service } from [32m'../../../core/services/mock/template-mock.service'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/calendar-workout.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:6:32:
+[37m      6 │ ...arWorkout } from [32m'../../../core/models/calendar-workout.interface'[37m;
+        ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/training-template.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:7:33:
+[37m      7 │ ...Template } from [32m'../../../core/models/training-template.interface'[37m;
+        ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:45:4:
+[37m      45 │     [32mthis.calendarService[37m.getWorkouts(monthStr).subscribe(workouts ...
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'workouts' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:45:57:
+[37m      45 │ ...this.calendarService.getWorkouts(monthStr).subscribe([32mworkouts[37m => {
+         ╵                                                         [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:52:4:
+[37m      52 │     [32mthis.templateService[37m.getTemplates().subscribe(temps => {
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'temps' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:52:50:
+[37m      52 │     this.templateService.getTemplates().subscribe([32mtemps[37m => {
+         ╵                                                   [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:108:6:
+[37m      108 │       [32mthis.calendarService[37m.scheduleWorkout(workoutReq).subscribe({
+          ╵       [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'res' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/calendar/calendar.ts:109:15:
+[37m      109 │         next: ([32mres[37m) => {
+          ╵                [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../../core/services/mock/template-mock.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:4:36:
+[37m      4 │ ...vice } from [32m'../../../../core/services/mock/template-mock.service'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../../core/services/mock/exercise-mock.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:5:36:
+[37m      5 │ ...vice } from [32m'../../../../core/services/mock/exercise-mock.service'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../../core/models/exercise.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:6:25:
+[37m      6 │ import { Exercise } from [32m'../../../../core/models/exercise.interface'[37m;
+        ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:31:4:
+[37m      31 │     [32mthis.exerciseService[37m.getExercises().subscribe(exs => {
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'exs' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:31:50:
+[37m      31 │     this.exerciseService.getExercises().subscribe([32mexs[37m => {
+         ╵                                                   [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/create-template/create-template.ts:64:6:
+[37m      64 │       [32mthis.templateService[37m.createTemplate(newTemplate).subscribe({
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../../core/services/mock/template-mock.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/template-list/template-list.ts:4:36:
+[37m      4 │ ...vice } from [32m'../../../../core/services/mock/template-mock.service'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../../core/models/training-template.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/template-list/template-list.ts:5:33:
+[37m      5 │ ...plate } from [32m'../../../../core/models/training-template.interface'[37m;
+        ╵                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/training/template-list/template-list.ts:19:22:
+[37m      19 │     this.templates$ = [32mthis.templateService[37m.getTemplates();
+         ╵                       [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onChartInit' does not exist on type 'Weight'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.html:9:57:
+[37m      9 │ ...chartOptions" (chartInit)="[32monChartInit[37m($event)" class="w-full h-...
+        ╵                               [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component Weight.
+
+    src/app/features/weight/weight.ts:18:15:
+[37m      18 │   templateUrl: [32m'./weight.html'[37m
+         ╵                [32m~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onSubmit' does not exist on type 'Weight'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.html:22:44:
+[37m      22 │ ...m [formGroup]="logForm" (ngSubmit)="[32monSubmit[37m()" class="space-y-4">
+         ╵                                        [32m~~~~~~~~[0m
+
+  Error occurs in the template of component Weight.
+
+    src/app/features/weight/weight.ts:18:15:
+[37m      18 │   templateUrl: [32m'./weight.html'[37m
+         ╵                [32m~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/mock/weight-mock.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:3:34:
+[37m      3 │ ...ckService } from [32m'../../../core/services/mock/weight-mock.service'[37m;
+        ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/weight-log.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:4:26:
+[37m      4 │ import { WeightLog } from [32m'../../../core/models/weight-log.interface'[37m;
+        ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2571: Object is of type 'unknown'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:40:4:
+[37m      40 │     [32mthis.weightService[37m.getLogs().subscribe(logs => {
+         ╵     [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'logs' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:40:43:
+[37m      40 │     this.weightService.getLogs().subscribe([32mlogs[37m => {
+         ╵                                            [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'a' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:41:29:
+[37m      41 │       this.logs = logs.sort(([32ma[37m, b) => new Date(a.loggedDate).getTi...
+         ╵                              [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'b' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:41:32:
+[37m      41 │       this.logs = logs.sort((a, [32mb[37m) => new Date(a.loggedDate).getTi...
+         ╵                                 [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:49:13:
+[37m      49 │       return [32m[37m\`\${d.getMonth() + 1}/\${d.getDate()}\`;
+         ╵              [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1160: Unterminated template literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/weight/weight.ts:120:0:
+[37m      120 │ [32m[37m
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mSyntax error "`"[0m
+
+    src/app/core/interceptors/jwt.interceptor.ts:8:36:
+[37m      8 │       setHeaders: { Authorization: \[32m[37m`Bearer \${token}\` }
+        ╵                                     [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected ";"[0m
+
+    src/app/core/services/mock/auth-mock.service.ts:9:21:
+[37m      9 │     private apiUrl = [32m;[37m
+        ╵                      [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../core/services/mock/calendar-mock.service"[0m
+
+    src/app/features/calendar/calendar.ts:4:36:
+[37m      4 │ ...Service } from [32m'../../../core/services/mock/calendar-mock.service'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../core/services/mock/template-mock.service"[0m
+
+    src/app/features/calendar/calendar.ts:5:36:
+[37m      5 │ ...Service } from [32m'../../../core/services/mock/template-mock.service'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../../core/services/mock/template-mock.service"[0m
+
+    src/app/features/training/create-template/create-template.ts:4:36:
+[37m      4 │ ...vice } from [32m'../../../../core/services/mock/template-mock.service'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../../core/services/mock/exercise-mock.service"[0m
+
+    src/app/features/training/create-template/create-template.ts:5:36:
+[37m      5 │ ...vice } from [32m'../../../../core/services/mock/exercise-mock.service'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../../core/services/mock/template-mock.service"[0m
+
+    src/app/features/training/template-list/template-list.ts:4:36:
+[37m      4 │ ...vice } from [32m'../../../../core/services/mock/template-mock.service'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mUnterminated string literal[0m
+
+    src/app/features/weight/weight.ts:178:0:
+[37m      178 │ [32m[37m
+          ╵ [32m^[0m
+
+[39m[22m
