@@ -1,9 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { TemplateMockService } from '../../../../core/services/mock/template-mock.service';
-import { ExerciseMockService } from '../../../../core/services/mock/exercise-mock.service';
-import { Exercise } from '../../../../core/models/exercise.interface';
+import { TemplateMockService } from '../../../core/services/mock/template-mock.service';
+import { ExerciseMockService } from '../../../core/services/mock/exercise-mock.service';
+import { Exercise } from '../../../core/models/exercise.interface';
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({
@@ -28,7 +28,7 @@ export class CreateTemplate implements OnInit {
   });
 
   ngOnInit() {
-    this.exerciseService.getExercises().subscribe(exs => {
+    this.exerciseService.getExercises().subscribe((exs: any) => {
       this.exercisesList = exs;
     });
   }

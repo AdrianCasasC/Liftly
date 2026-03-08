@@ -1,8 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { TemplateMockService } from '../../../../core/services/mock/template-mock.service';
-import { TrainingTemplate } from '../../../../core/models/training-template.interface';
+import { TemplateMockService } from '../../../core/services/mock/template-mock.service';
+import { TrainingTemplate } from '../../../core/models/training-template.interface';
 import { Observable } from 'rxjs';
 
 @Component({

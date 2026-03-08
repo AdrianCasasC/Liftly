@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { WeightMockService } from '../../../core/services/mock/weight-mock.service';
-import { WeightLog } from '../../../core/models/weight-log.interface';
+import { WeightMockService } from '../../core/services/mock/weight-mock.service';
+import { WeightLog } from '../../core/models/weight-log.interface';
 import { NgxEchartsDirective } from 'ngx-echarts';
 import { NgIf } from '@angular/common';
 import * as echarts from 'echarts/core';
@@ -37,8 +37,8 @@ export class Weight implements OnInit {
   }
 
   loadLogs() {
-    this.weightService.getLogs().subscribe(logs => {
-      this.logs = logs.sort((a, b) => new Date(a.loggedDate).getTime() - new Date(b.loggedDate).getTime());
+    this.weightService.getLogs().subscribe((logs: any) => {
+      this.logs = logs.sort((a: any, b: any) => new Date(a.loggedDate).getTime() - new Date(b.loggedDate).getTime());
       this.updateChart();
     });
   }
@@ -105,9 +105,9 @@ export class Weight implements OnInit {
       };
 
       this.weightService.addLog(newLog).subscribe({
-        next: (log) => {
+        next: (log: any) => {
           this.logs.push(log);
-          this.logs.sort((a, b) => new Date(a.loggedDate).getTime() - new Date(b.loggedDate).getTime());
+          this.logs.sort((a: any, b: any) => new Date(a.loggedDate).getTime() - new Date(b.loggedDate).getTime());
           this.updateChart();
           this.isSubmitting = false;
           this.logForm.patchValue({ weight: '' });

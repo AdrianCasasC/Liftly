@@ -1,10 +1,10 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { NgClass, NgFor, NgIf, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { CalendarMockService } from '../../../core/services/mock/calendar-mock.service';
-import { TemplateMockService } from '../../../core/services/mock/template-mock.service';
-import { CalendarWorkout } from '../../../core/models/calendar-workout.interface';
-import { TrainingTemplate } from '../../../core/models/training-template.interface';
+import { CalendarMockService } from '../../core/services/mock/calendar-mock.service';
+import { TemplateMockService } from '../../core/services/mock/template-mock.service';
+import { CalendarWorkout } from '../../core/models/calendar-workout.interface';
+import { TrainingTemplate } from '../../core/models/training-template.interface';
 
 interface Day {
   date: Date;
@@ -42,14 +42,14 @@ export class Calendar implements OnInit {
 
   loadData() {
     const monthStr = this.currentDate.toISOString().split('T')[0].substring(0, 7);
-    this.calendarService.getWorkouts(monthStr).subscribe(workouts => {
+    this.calendarService.getWorkouts(monthStr).subscribe((workouts: any) => {
       this.allWorkouts = workouts;
       this.generateCalendar();
     });
   }
 
   loadTemplates() {
-    this.templateService.getTemplates().subscribe(temps => {
+    this.templateService.getTemplates().subscribe((temps: any) => {
       this.templates = temps;
     });
   }
@@ -106,7 +106,7 @@ export class Calendar implements OnInit {
       };
 
       this.calendarService.scheduleWorkout(workoutReq).subscribe({
-        next: (res) => {
+        next: (res: any) => {
           // Re-load template details just for display usually we might want eager loading or keep it simple
           const template = this.templates.find(t => t.id === Number(this.selectedTemplateId));
           res.template = template;

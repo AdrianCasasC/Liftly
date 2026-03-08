@@ -1,0 +1,26 @@
+[33m❯[39m Building...
+[32m✔[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m          [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m           [2m | [22m [36m50.24 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m         [2m | [22m [36m21.61 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m  [2m | [22m [1m71.85 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m          [2m | [22m [1mRaw size[22m
+[32mchunk-4JX7LOCT.js[39m  [2m | [22m[2mcalendar[22m       [2m | [22m [36m26.29 kB[39m[2m | [22m
+[32mchunk-TBT3RTE5.js[39m  [2m | [22m[2mcreate-template[22m[2m | [22m [36m21.24 kB[39m[2m | [22m
+[32mchunk-LPMOUT6Y.js[39m  [2m | [22m[2mweight[22m         [2m | [22m [36m14.46 kB[39m[2m | [22m
+[32mchunk-IJLGEDQI.js[39m  [2m | [22m[2mtemplate-list[22m  [2m | [22m [36m12.19 kB[39m[2m | [22m
+[32mchunk-YPXCZ7TA.js[39m  [2m | [22m[2mregister[22m       [2m | [22m [36m12.04 kB[39m[2m | [22m
+[32mchunk-JYNLYBM5.js[39m  [2m | [22m[2mshell[22m          [2m | [22m [36m11.94 kB[39m[2m | [22m
+[32mchunk-GFZ3PQBM.js[39m  [2m | [22m[2mlogin[22m          [2m | [22m  [36m9.68 kB[39m[2m | [22m
+[32mchunk-PNWWGKVC.js[39m  [2m | [22m[2m-[22m              [2m | [22m  [36m1.19 kB[39m[2m | [22m
+[32mchunk-PL7ZQ55M.js[39m  [2m | [22m[2m-[22m              [2m | [22m  [36m1.11 kB[39m[2m | [22m
+[32mchunk-ZDJ3GTZ7.js[39m  [2m | [22m[2m-[22m              [2m | [22m[36m187 bytes[39m[2m | [22m
+
+Application bundle generation complete. [2.135 seconds] - 2026-03-08T18:24:28.233Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
