@@ -39,10 +39,11 @@ export class Register {
         next: (res) => {
           localStorage.setItem('token', res.token);
           this.notificationService.showSuccess('Registration successful!');
-          this.router.navigate(['/']);
+          this.router.navigate(['/calendar']);
           this.isLoading = false;
         },
         error: (err) => {
+          console.log(err);
           this.errorMessage = 'Registration failed. Please try again.';
           this.notificationService.showError('Registration failed. Please check your details.');
           this.isLoading = false;
