@@ -15,7 +15,7 @@ echarts.use([LineChart, GridComponent, TooltipComponent, TitleComponent, AxisPoi
 @Component({
   selector: 'app-weight',
   standalone: true,
-  imports: [ReactiveFormsModule, NgxEchartsDirective, NgIf, NgFor, CommonModule],
+  imports: [ReactiveFormsModule, NgxEchartsDirective, CommonModule],
   templateUrl: './weight.html'
 })
 export class Weight implements OnInit {
