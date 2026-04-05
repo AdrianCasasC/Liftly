@@ -1,7 +1,6 @@
 package com.liftly.liftly_backend.service;
 
 import com.liftly.liftly_backend.model.dto.CalendarWorkoutDto;
-import com.liftly.liftly_backend.model.dto.TrainingTemplateDto;
 import com.liftly.liftly_backend.model.entity.CalendarWorkout;
 import com.liftly.liftly_backend.model.entity.TrainingTemplate;
 import com.liftly.liftly_backend.model.entity.User;
@@ -44,7 +43,7 @@ public class CalendarWorkoutService {
     @Transactional
     public CalendarWorkoutDto scheduleWorkout(String email, CalendarWorkoutDto dto) {
         User user = userRepository.findByEmail(email).orElseThrow();
-        TrainingTemplate template = templateRepository.findById(dto.template().id())
+        TrainingTemplate template = templateRepository.findById(dto.templateId())
                 .orElseThrow(() -> new IllegalArgumentException("Template not found"));
 
         if (!template.getUser().getId().equals(user.getId())) {
@@ -62,18 +61,10 @@ public class CalendarWorkoutService {
     }
 
     private CalendarWorkoutDto mapToDto(CalendarWorkout workout) {
-        TrainingTemplateDto templateDto = new TrainingTemplateDto(
-                workout.getTemplate().getId(),
-                workout.getTemplate().getUser().getId(),
-                workout.getTemplate().getName(),
-                workout.getTemplate().getDescription(),
-                null // Omit full exercise list for summary view to keep it light
-        );
-
         return new CalendarWorkoutDto(
                 workout.getId(),
                 workout.getUser().getId(),
-                templateDto,
+                workout.getTemplate().getId(),
                 workout.getScheduledDate(),
                 workout.getCompleted()
         );

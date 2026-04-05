@@ -8,6 +8,7 @@ import com.liftly.liftly_backend.model.enums.Provider;
 import com.liftly.liftly_backend.model.enums.Role;
 import com.liftly.liftly_backend.repository.UserRepository;
 import com.liftly.liftly_backend.security.JwtTokenProvider;
+import com.liftly.liftly_backend.security.UserDetailsImpl;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -15,9 +16,11 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -64,6 +67,12 @@ public class AuthController {
 
         userRepository.save(user);
 
-        return ResponseEntity.ok("User registered successfully!");
+        // Auto-login: generate a JWT so the frontend can proceed immediately
+        UserDetailsImpl userDetails = UserDetailsImpl.build(user);
+        UsernamePasswordAuthenticationToken authentication =
+                new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+        String jwt = jwtTokenProvider.generateToken(authentication);
+
+        return ResponseEntity.ok(new AuthResponse(jwt, user.getEmail(), user.getRole().name()));
     }
 }

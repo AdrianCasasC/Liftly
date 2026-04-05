@@ -1,8 +1,14 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { User } from '../../models/user.interface';
 import { environment } from '../../../../environments/environment';
+
+export interface AuthResponse {
+  token: string;
+  type: string;
+  email: string;
+  role: string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -11,11 +17,11 @@ export class AuthMockService {
   private http = inject(HttpClient);
   private apiUrl = `${environment.apiUrl}/auth`;
 
-  login(credentials: any): Observable<{ user: User, token: string }> {
-    return this.http.post<{ user: User, token: string }>(`${this.apiUrl}/login`, credentials);
+  login(credentials: any): Observable<AuthResponse> {
+    return this.http.post<AuthResponse>(`${this.apiUrl}/login`, credentials);
   }
 
-  register(data: any): Observable<{ user: User, token: string }> {
-    return this.http.post<{ user: User, token: string }>(`${this.apiUrl}/register`, data);
+  register(data: any): Observable<AuthResponse> {
+    return this.http.post<AuthResponse>(`${this.apiUrl}/register`, data);
   }
 }
